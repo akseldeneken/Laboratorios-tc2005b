@@ -1,0 +1,98 @@
+header {
+    padding: 5px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body { 
+    margin: 150px;
+}
+
+p, a {
+    font-family: "Roboto", monospace;
+    font-size: 14px;
+    text-align: justify;
+    color: black;
+    margin: 10px;
+}
+
+a:hover {
+  font-size: 15px;
+}
+
+
+.titles {
+    font-family: "Roboto", monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+#fotos {
+  text-align: center;
+}
+
+#home {
+  text-align: center;
+  margin: 10px;
+}
+
+
+footer {
+    padding: 5px;
+    border-top: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.column {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    float: left;
+    width: 10%;
+    text-align: center;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 50%;
+  }
+
+form {
+    margin: 30px;
+    text-align: center;
+    font-family: "Roboto", monospace;
+    font-size: 15px;
+}
+
+ul,ol {
+    text-align: justify;
+    font-family: "Roboto", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
