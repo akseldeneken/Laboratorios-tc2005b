@@ -1,0 +1,42 @@
+.tabla {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla thead {
+    background-color: #f0f0f0;
+}
+
+ol, ul {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 8px;
+}
