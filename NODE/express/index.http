@@ -1,0 +1,37 @@
+POST http://localhost:3000/api/cursos/programacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4,
+    "titulo": "Aprende a ser bueno",
+    "lenguaje": "javascript",
+    "vistas": 389489,
+    "nivel": "basico"
+}
+
+###
+
+PUT http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "titulo": "MEXICOOOOOO",
+    "lenguaje": "INGLES",
+    "vistas": 8980809,
+    "nivel": "muuuy cabron"
+}
+
+###
+
+PATCH http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "MILLONARIO EN 3 DIAS",
+    "vistas": 100000
+}
+
+###
+
+DELETE http://localhost:3000/api/cursos/programacion/1 HTTP/1.1

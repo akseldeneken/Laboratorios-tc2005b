@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<%- include('includes/head.ejs') %>
+<body>
+    <h1>Nueva tarea</h1>
+    <form action="/tasks/new" method="POST">
+        <label for="title">Título:</label>
+        <input type="text" name="title" id="title" required>
+        <br>
+        <label for="desc">Descripción:</label>
+        <textarea name="desc" id="desc" required></textarea>
+        <br>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <h2>Tareas guardadas</h2>
+    <% if (tareas.length > 0) { %>
+        <ul>
+            <% for (let tarea of tareas) { %>
+                <li><strong><%= tarea.title %></strong>: <%= tarea.desc %></li>
+            <% } %>
+        </ul>
+    <% } else { %>
+        <p>No hay tareas aún.</p>
+    <% } %>
+    <%- include('includes/footer.ejs') %>
+</body>
+</html>
