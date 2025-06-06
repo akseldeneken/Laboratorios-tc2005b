@@ -1,11 +1,28 @@
-<h1>¿Qué otras formas de autentificación existen?</h1>
+<h1>Preguntas del Laboratorio 19: Role-Based Access Control (RBAC)</h1>
+
+<h2>¿En qué consiste el control de acceso basado en roles?</h2>
 <p>
-  Existen varias formas de autenticación además del método tradicional con usuario y contraseña. Algunas de las más comunes incluyen:
+  El control de acceso basado en roles (RBAC) es un modelo de seguridad en el que los permisos para realizar ciertas operaciones están asociados a roles, y los usuarios obtienen permisos al ser asignados a uno o varios roles. De esta forma, no se asignan permisos directamente a los usuarios, sino a los roles que representan funciones dentro de un sistema (como "admin", "editor", "viewer").
 </p>
+
+<h2>¿Qué capacidades le da a una aplicación implementar RBAC?</h2>
 <ul>
-  <li><strong>Autenticación multifactor (MFA):</strong> Necesita que el usuario proporcione dos o más formas de verificación, como una contraseña y un código enviado a su celular.</li>
-  <li><strong>Autenticación basada en tokens:</strong> Uso de tokens JWT (JSON Web Tokens) para validar sesiones y permisos sin necesidad de guardar estado en el servidor.</li>
-  <li><strong>Autenticación biométrica:</strong> Uso de huellas dactilares, reconocimiento facial o de iris para verificar la identidad del usuario.</li>
-  <li><strong>Autenticación mediante OAuth:</strong> Permite iniciar sesión usando credenciales de terceros, como Google, Facebook o Twitter.</li>
-  <li><strong>Autenticación por certificados digitales:</strong> Utiliza certificados digitales para validar la identidad del usuario.</li>
+  <li>Facilita la administración de permisos: puedes cambiar los accesos de muchos usuarios modificando un solo rol.</li>
+  <li>Aumenta la seguridad: los usuarios solo acceden a lo que necesitan según su rol.</li>
+  <li>Permite construir interfaces dinámicas según los permisos del usuario.</li>
+  <li>Hace más escalable y mantenible el control de acceso conforme crece el sistema.</li>
 </ul>
+
+<h2>Sistema que aplica RBAC:</h2>
+<p><strong>Ejemplo:</strong> GitHub</p>
+<p>
+  GitHub permite asignar roles como owner, admin, write y read a los colaboradores de un repositorio. Cada rol tiene diferentes niveles de acceso sobre las acciones que se pueden realizar (como editar código, crear ramas, hacer merge, etc.).
+</p>
+<p><strong>Ventajas:</strong> Control granular y centralizado de permisos. Fácil de administrar.</p>
+
+<h2>Sistema que NO aplica RBAC:</h2>
+<p><strong>Ejemplo:</strong> Sitio web con autenticación básica sin niveles de acceso</p>
+<p>
+  Muchos sitios web solo verifican si un usuario está logueado y permiten acceso a todo el contenido. No distinguen entre usuarios normales o administradores.
+</p>
+<p><strong>Desventajas:</strong> Difícil de escalar y mantener. Cualquier funcionalidad sensible queda expuesta a cualquier usuario con acceso.</p>
