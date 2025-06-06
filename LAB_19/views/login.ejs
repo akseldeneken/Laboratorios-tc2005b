@@ -1,0 +1,9 @@
+<h1>Login</h1>
+<% if (errorMessage) { %><p style="color:red"><%= errorMessage %></p><% } %>
+<form action="/login" method="POST">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <input type="text" name="username" placeholder="Usuario" required>
+  <input type="password" name="password" placeholder="Contraseña" required>
+  <button type="submit">Ingresar</button>
+</form>
+<a href="/register">Registrarse</a>

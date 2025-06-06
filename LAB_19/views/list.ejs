@@ -1,0 +1,24 @@
+<h1>Lista de Videojuegos</h1>
+
+<ul>
+  <% if (videojuegos.length > 0) { %>
+    <% videojuegos.forEach(v => { %>
+      <li>
+        <%= v.nombre %> - <%= v.plataforma %>
+        [<a href="/videojuegos/<%= v.id %>">Editar</a>]
+      </li>
+    <% }) %>
+  <% } else { %>
+    <li>No hay videojuegos</li>
+  <% } %>
+</ul>
+
+<a href="/preguntas">Ver preguntas del laboratorio 18</a>
+
+<form action="/logout" method="POST" style="display:inline;">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <button type="submit">Cerrar sesión</button>
+</form>
+
+
+

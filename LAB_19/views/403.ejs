@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>No autorizado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #e74c3c;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+  <h1>403 - Acceso denegado</h1>
+  <p><%= mensaje || "No tienes permiso para acceder a esta sección." %></p>
+  <a href="/">Volver al inicio</a>
+</body>
+</html>
