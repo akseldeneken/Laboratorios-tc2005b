@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>App de sesiones y cookies</h1>
+
+    <ul>
+        <li><a href="/set-cookie">Definir cookie</a></li>
+        <li><a href="/read-cookie">Leer cookie</a></li>
+        <li><a href="/set-session">Definir sesión</a></li>
+        <li><a href="/read-session">Leer sesión</a></li>
+        <li><a href="/logout">Cerrar sesión</a></li>
+        <li><a href="/preguntas">Preguntas</a></li>
+    </ul>
+
+    <% if (cookie) { %>
+        <p>Cookie enviada por el navegador: <%= cookie %></p>
+    <% } %>
+
+    <% if (sessionData) { %>
+        <p>Sesión activa: <%= sessionData.name %> - <%= sessionData.role %></p>
+    <% } else { %>
+        <p>No hay sesión activa.</p>
+    <% } %>
+</body>
+</html>
