@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<%- include('includes/head') %>
+<body>
+    <div class="container">
+        <h1>Agregar tarea</h1>
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Título" required>
+            <input type="text" name="desc" placeholder="Descripción" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+<%- include('includes/footer') %>
+</body>
+</html>

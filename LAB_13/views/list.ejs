@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<%- include('includes/head') %>
+<body>
+    <div class="container">
+        <h1>Lista de tareas</h1>
+        <form action="/search" method="GET" class="mb-3">
+    <input type="text" name="query" placeholder="Buscar tarea" required>
+    <button type="submit">Buscar</button>
+        </form>
+        <ul>
+            <% if (tareas.length > 0) { %>
+                <% tareas.forEach(t => { %>
+                    <li><strong><%= t.titulo %></strong>: <%= t.descripcion %></li>
+                <% }) %>
+            <% } else { %>
+                <li>No hay tareas registradas</li>
+            <% } %>
+        </ul>
+    </div>
+<%- include('includes/footer') %>
+</body>
+</html>
