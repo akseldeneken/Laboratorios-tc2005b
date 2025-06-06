@@ -25,7 +25,9 @@ exports.getById = (req, res) => {
         .catch(err => console.log(err));
 };
 
-
+exports.getQuestions = (req, res) => {
+  res.render('questions.ejs');
+};
 
 exports.update = (req, res) => {
     const { id, nombre, plataforma } = req.body;
