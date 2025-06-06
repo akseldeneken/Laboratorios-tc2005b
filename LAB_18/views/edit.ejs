@@ -1,0 +1,7 @@
+<h1>Editar Videojuego</h1>
+<form action="/update" method="POST">
+    <input type="hidden" name="id" value="<%= videojuego.id %>">
+    <input type="text" name="nombre" value="<%= videojuego.nombre %>" required>
+    <input type="text" name="plataforma" value="<%= videojuego.plataforma %>" required>
+    <button type="submit">Actualizar</button>
+</form>
