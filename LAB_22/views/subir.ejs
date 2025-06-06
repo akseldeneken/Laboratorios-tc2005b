@@ -1,0 +1,11 @@
+<h1>Sube una imagen</h1>
+
+<form action="/archivo" method="POST" enctype="multipart/form-data">
+  <input type="file" name="archivo" required />
+  <button type="submit">Subir</button>
+</form>
+
+<% if (imagen) { %>
+  <h2>Imagen subida:</h2>
+  <img src="/<%= imagen %>" alt="Imagen" style="max-width: 300px;" />
+<% } %>
